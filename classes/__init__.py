@@ -1,4 +1,4 @@
-from .COSTester import COSTester
+from .COS_Tester import COSTester
 from .client_COSTester import ClientCOSTester
 from .server_COSTester import ServerCOSTester
 

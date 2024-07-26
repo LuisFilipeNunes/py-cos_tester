@@ -27,7 +27,7 @@ class InterfaceManager:
     def change_cos(self, cos_value, verbose=False):
         subprocess.run(["sudo", "ip", "link", "set", self.interface, "type", "vlan", "egress", f"0:{cos_value}"], check=True)
         if verbose:
-            print(f"COS value for {self.interface} has been changed to {cos_value}")
+            print(f"COS value for {self.interface} has been changed to {cos_value}\n")
 
     def get_ip(self):
         try:

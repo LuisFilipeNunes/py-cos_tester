@@ -5,8 +5,8 @@ class HeartbeatManager:
     def __init__(self, server_ip=None, port=5551):
         self.server_ip = server_ip
         self.port = port
-
-    def beat_heart(self, server_socket, heartbeat, verbose=False):
+    
+    def beat_heart(server_socket, heartbeat, verbose=False):
         conn, addr = server_socket.accept()
         if verbose:
             print(f"Connected by {addr}")
